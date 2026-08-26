@@ -6,7 +6,7 @@
     <title>Primeiros passos com DOM</title>
     <style>
         body {
-            background-color: aqua;
+            background-color: rgb(7, 0, 96);
             color: white;
             font: normal 20pt arial;
         }
@@ -18,7 +18,12 @@
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
     <div>Clique em mim</div>
     <script>
-        window.document.write(URL)
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Está escrito assim: ' + p1.innerText)
+        p1.style.color = 'blue'
+        corpo.style.background = 'black'
+        document.write(p1.innerText)
     </script>
 </body>
 </html>

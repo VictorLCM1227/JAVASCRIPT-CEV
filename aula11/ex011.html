@@ -14,9 +14,14 @@
     </div>
     <script>
         function analisar() {
-            var pais = document.getElementById('pais')
+            var pais = document.getElementById('pais').value
             var res = document.querySelector('div#res')
             res.innerHTML = `<p>Você nasceu no país ${pais} então: </P>`
+            if (pais == 'Brasil') {
+                res.innerHTML += `<p>Você é brasileiro!</p>`
+            } else {
+                res.innerHTML += `<p> Você é estrangeiro!</p>`
+            }
         }
     </script>
 </body>
